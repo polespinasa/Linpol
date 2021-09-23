@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#creator polespinasa --> https://github.com/polespinasa
 
 #Colours
 green="\e[0;32m\033[1m"

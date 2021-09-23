@@ -6,9 +6,9 @@ Just execute `linpol.sh` in a Linux system and the script will be automatically 
 
 ## Quick start
 
-Just clone the repo in your victim machine and run the script using the following command.
+Clone the repo in your victim machine and run the script using the following command.
 
-`linpol.sh time`
+`./linpol.sh time`
 
 Changing time with the amount of minutes you want to evaluate the cron process.
 

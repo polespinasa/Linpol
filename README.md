@@ -22,16 +22,3 @@ The script search for the most common ways of privilege escalation.
 - Cron process
 - Capabilities
 
-
-```
-function main(){
-	tput civis
-	clear
-	scanSuid
-	scanGroups
-	scanWritable
-	cronMon "1"
-	searchCap
-	tput cnorm
-}
-```

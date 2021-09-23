@@ -15,7 +15,7 @@ Changing time with the amount of minutes you want to evaluate the cron process.
 ## Basic information
 
 The script search for the most common ways of privilege escalation.
-### What the script search
+### What the script is looking for
 - SUID permissions
 - Linux Groups
 - Vulnerable writable files

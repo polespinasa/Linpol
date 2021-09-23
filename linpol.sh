@@ -133,15 +133,28 @@ function searchCap(){
 
 
 function main(){
-	tput civis
 	clear
-	scanSuid
-	scanGroups
-	scanWritable
-	cronMon "1"
-	searchCap
-	tput cnorm
+	echo -e "      ${turquoise} _       _       ______   _____  _       ${end}"
+	echo -e "      ${turquoise}| |     (_)     (_____ \ / ___ \| |      ${end}"
+	echo -e "      ${turquoise}| |      _ ____  _____) ) |   | | |      ${end}"
+	echo -e "      ${turquoise}| |     | |  _ \|  ____/| |   | | |      ${end}"
+	echo -e "      ${turquoise}| |_____| | | | | |     | |___| | |_____ ${end}"
+	echo -e "      ${turquoise}|_______)_|_| |_|_|      \_____/|_______)${end}"
+	echo -e "\n\n"	
+	if [ -n "$1" ]; then
+		scanSuid
+		scanGroups
+		scanWritable
+		cronMon $1
+		searchCap
+		tput cnorm
+	else                                         
+		echo -e
+		echo -e " ${red}    [!]  You must give us the Cron lapsus time using --> ${green}./linpol${purple} time${red}"
+		echo -e "           Changing time word for the number of minutes that you want${end}"
+		exit 1
+	fi
 }
 
 
-main
+main $1
